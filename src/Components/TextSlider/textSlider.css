@@ -1,0 +1,40 @@
+
+.text-slider-container{
+  margin: 50px 0;
+}
+
+.text-slide-contain {
+  width: calc(870px * 4);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.text-slide-head {
+  width: 870px;
+  background-color: var(--basicWhite);
+
+  font: 200px "dongpora";
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: var(--basicBlack);
+
+  display: flex;
+  align-items: center;
+}
+
+.text-slide-head img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-slider-container{
+      margin: 20px 0;
+  }
+}
+

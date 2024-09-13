@@ -1,0 +1,412 @@
+
+.featured-item-section-main{
+    background: url(/images/pattern-bg.png) rgba(255, 255, 255, 0.3);
+    background-position: center;
+    background-blend-mode: screen;
+    background-repeat: repeat-y;
+}
+
+
+
+.featured-item-section-main .abs-img{
+    width: 350px;
+    top: -130px;
+    right: -150px;
+}
+
+.featured-itemCard-sec{
+    width: 1180px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.item-card-contain .abs-img{
+    width: 300px;
+    left: 45%;
+    top: -80px;
+    transform: translateX(-50%);
+}
+
+.item-card-contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-card{
+    background-color: var(--basicWhite);
+}
+
+.featured-card1{
+    width: 545px;
+    height: 500px;
+
+    border-radius: 500px 500px 24px 24px;
+    box-shadow: 6px 6px var(--basicBlack);
+    border: 1px solid var(--basicBlack);
+
+    overflow: hidden;
+    padding: 8px 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-card1 .featured-card-img{
+    width: 100%;
+}
+.featured-card1 .featured-card-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 500px 500px 24px 24px;
+}
+
+.featured-card1 .featured-card-cntnt{
+    text-align: center;
+}
+
+.featured-card-cntnt .featured-card-title{
+    font: 28px "popular-cafe";
+    line-height: 26px;
+}
+
+.featured-card-cntnt .featured-card-price{
+    font: 600 16px var(--syneFont);
+    padding-bottom: 20px;
+}
+
+.featured-card-cntnt .featured-card-button{
+    width: 200px;
+    height: auto;
+}
+.featured-card-button .icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.item-dblCard-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-dblCard-contain .featured-card{
+    width: 600px;
+    height: 240px;
+    overflow: hidden;
+    padding: 8px;
+
+    display: flex;
+    border: 1px solid var(--basicBlack);
+}
+
+.item-dblCard-contain .featured-card .featured-card-cntnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 10px;
+}
+
+.item-dblCard-contain .featured-card2{
+    border-radius: 200px 28px 28px 200px;
+    box-shadow: -4px -4px var(--basicBlack);
+}
+.item-dblCard-contain .featured-card3{
+    border-radius: 28px;
+    box-shadow: -4px 4px var(--basicBlack);
+}
+
+.item-dblCard-contain .featured-card .featured-card-img{
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item-dblCard-contain .featured-card .featured-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-dblCard-contain .featured-card2 .featured-card-img{
+    border-radius: 200px 24px 60px 200px;
+}
+.item-dblCard-contain .featured-card3 .featured-card-img{
+    border-radius: 24px 24px 60px 24px;
+}
+
+
+
+.item-contain-mt-30{
+    margin-top: 30px;
+}
+
+.hghlt-text-contain{
+    width: 545px;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+.hghlt-text-contain .abs-img{
+    width: 100px;
+    left: 60%;
+    top: 28%;
+}
+
+.hghlt-text-contain .hghlt-text{
+    font: 120px "dongpora";
+    text-transform: uppercase;
+    line-height: 130px;
+    letter-spacing: -2px;
+}
+
+.more-option-cntnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-option-cntnt .option-btn{
+    width: 120px;
+    height: 120px;
+
+    /* background-color: var(--basicWhite); */
+    border: 1px solid var(--basicBlack);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-btn img{
+    width: 100px;
+    height: auto;
+}
+
+.grdnt-text{
+    background: -webkit-linear-gradient(#ffb300, #ffd573);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hghlt-text-contain .hghlt-text-blob{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.featured-card4{
+    width: 600px;
+    height: 490px;
+    border: 1px solid var(--basicBlack);
+    padding: 8px;
+
+    border-radius: 100px 28px 28px 28px;
+    box-shadow: -4px -4px var(--basicBlack);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-card4 .featured-card-cntnt{
+    text-align: center;
+}
+
+.featured-card4 .featured-card-img{
+    width: 100%;
+    height: 350px;
+
+    border-radius: 100px 24px 24px 24px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.featured-card4 .featured-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .featured-itemCard-sec{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .item-card-contain{
+        gap: 30px;
+    }
+
+    .featured-card{
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-card1,
+    .featured-card2,
+    .featured-card3,
+    .featured-card4,
+    .hghlt-text-contain{
+        width: 100%;
+        height: auto;
+    }
+
+    .item-dblCard-contain{
+        gap: 10px;
+    }
+
+    .item-dblCard-contain .featured-card{
+        width: 100%;
+    }
+
+    .featured-card1 .featured-card-img,
+    .featured-card4 .featured-card-img{
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+    }
+    .featured-card1 .featured-card-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 500px 500px 24px 24px;
+    }
+
+    .hghlt-text-contain .hghlt-text{
+        font: 120px "dongpora";
+        line-height: 130px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .item-card-contain{
+        flex-direction: column;
+    }
+
+    .featured-card{
+        border-radius: 28px;
+    }
+
+    .featured-card .featured-card-img img{
+        border-radius: 22px;
+    }
+
+    .item-dblCard-contain{
+        width: 100%;
+        display: flex;
+        flex-direction: unset;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .item-dblCard-contain .featured-card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 28px;
+    }
+
+    .item-dblCard-contain .featured-card{
+        width: 100%;
+        height: 300px;
+        border-radius: 22px;
+    }
+
+    .item-dblCard-contain .featured-card .featured-card-img{
+        width: 100%;
+        border-radius: 22px;
+    }
+
+    .item-dblCard-contain .featured-card .featured-card-cntnt{
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .item-card-contain2{
+        flex-direction: column-reverse;
+    }
+
+    .item-card-contain2 .featured-card .featured-card-img{
+        border-radius: 22px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .featured-item-section-main .abs-img{
+        width: 250px;
+        top: -130px;
+        right: -100px;
+    }
+
+    .item-card-contain .abs-img{
+        width: 200px;
+        left: 20%;
+        top: -100px;
+        transform: translateX(-50%);
+    }
+
+    .featured-card1 .featured-card-img,
+    .featured-card4 .featured-card-img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+
+    .item-dblCard-contain{
+        flex-direction: column;
+    }
+
+    .hghlt-text-contain .hghlt-text{
+        font: 96px "dongpora";
+        text-transform: uppercase;
+        line-height: 100px;
+        letter-spacing: -2px;
+    }
+
+    .hghlt-text-contain{
+        padding-top: 0;
+    }
+
+    .hghlt-text-contain .abs-img{
+        width: 80px;
+        left: 50%;
+        top: 20%;
+        z-index: 1;
+    }
+
+    .more-option-cntnt{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .more-option-cntnt .option-btn{
+        width: 90px;
+        height: 90px;
+        margin-left: 20px;
+    }
+
+    .option-btn img{
+        width: 80px;
+        height: auto;
+    }
+
+    .featured-card-cntnt .featured-card-title{
+        font: 24px "popular-cafe";
+        line-height: 25px;
+    }
+}

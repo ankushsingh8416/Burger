@@ -1,0 +1,350 @@
+/* -------------- Navbar Code Start ----------------- */
+
+.header .navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+ 
+}
+
+.navbar .navbar-right-cntnt {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  position: relative;
+}
+
+.navbar-right-cntnt::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: var(--basicBlack);
+
+  top: -5px;
+  left: 36%;
+}
+
+.navbar-right-cntnt .cart-menu {
+  width: 80px;
+  height: auto;
+  padding: 2px;
+  border-radius: 50px;
+  border: 2px solid var(--primaryColorYellow);
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.cart-menu .cart-menu-icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primaryColorYellow);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-menu-icon img {
+  width: 12px;
+  height: auto;
+}
+
+.navbar .navLink_barBtn {
+  width: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3px 0;
+
+  cursor: pointer;
+  z-index: 9;
+}
+
+.navLink_barBtn .bar {
+  height: 2px;
+  background-color: var(--basicBlack);
+  transition: 0.3s;
+}
+
+.bar:nth-child(1) {
+  width: 40%;
+}
+
+.bar:nth-child(2) {
+  width: 70%;
+}
+
+.bar:nth-child(3) {
+  width: 100%;
+}
+
+.navLink_barBtn:hover .bar:nth-child(1) {
+  width: 100%;
+}
+
+.navLink_barBtn:hover .bar:nth-child(2) {
+  width: 40%;
+}
+
+/* ----------- Humburger Menu Code Start ----------- */
+
+.hum-menu-container {
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  top: -150%;
+  z-index: 999;
+  background-color: var(--basicWhite);
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hum-menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hum-menu-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-cntnt-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-ctgr-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.menu-ctgr-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+  border-bottom: 1px solid var(--basicBlack);
+  position: relative;
+  transition: 0.5s;
+}
+
+.menu-ctgr-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--basicBlack);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.menu-ctgr-title {
+  width: 50%;
+  display: flex;
+  align-items: end;
+  padding-top: 10px;
+}
+
+.menu-ctgr-title img {
+  width: 30px;
+  height: auto;
+  transition: 0.5s;
+}
+
+.menu-ctgr-title .title-default-arrow {
+  display: block;
+}
+
+.menu-ctgr-item:hover {
+  color: var(--basicWhite);
+}
+
+.menu-ctgr-item:hover::before {
+  width: 100%;
+}
+
+.menu-ctgr-title .ctgr-title {
+  font: 100px "dongpora";
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.menu-ctgr-item .humMenu-CloseBtn-contain {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--basicBlack);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+}
+
+.menu-ctgr-item:hover .humMenu-CloseBtn-contain {
+  border: 1px solid var(--basicWhite);
+}
+
+.humMenu-CloseBtn-contain .menu-close-btn {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-close-btn::before,
+.menu-close-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 70px;
+  height: 1px;
+  background-color: var(--basicBlack);
+  transition: 0.5s;
+}
+
+.menu-ctgr-item:hover .menu-close-btn::before {
+  background-color: var(--basicWhite);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-ctgr-item:hover .menu-close-btn::after {
+  background-color: var(--basicWhite);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu-connect-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 40px;
+
+  margin-top: 20px;
+}
+
+.menu-connect-link-wrapper a {
+  text-decoration: none;
+  color: var(--basicBlack);
+  font: 700 16px var(--syneFont);
+
+  position: relative;
+}
+
+.menu-connect-link-wrapper a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+
+  background-color: var(--basicBlack);
+  transition: 0.5s;
+}
+
+.menu-connect-link-wrapper a:hover::after {
+  width: 100%;
+}
+
+/* ================================================= Responsive ===================================================== */
+
+@media screen and (max-width: 768px) {
+  .menu-connect-link-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .logo a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-right-cntnt::after {
+    height: 40px;
+    top: 0;
+    left: 50%;
+  }
+
+  .navbar-right-cntnt .cart-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .cart-menu .cart-menu-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-cntnt-wrapper {
+    padding: 10px;
+  }
+
+  .menu-ctgr-item {
+    padding: 10px;
+  }
+
+  .menu-ctgr-title img {
+    width: 20px;
+    height: auto;
+    transition: 0.5s;
+  }
+
+  .menu-ctgr-title .ctgr-title {
+    font: 20vw "dongpora";
+    line-height: 80px;
+  }
+
+  .menu-ctgr-item .humMenu-CloseBtn-contain {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu-close-btn::before,
+  .menu-close-btn::after {
+    width: 20px;
+  }
+
+  .menu-close-btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .menu-close-btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .menu-connect-link-wrapper {
+    gap: 10px 10px;
+  }
+}
